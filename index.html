@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entexel</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #0a0a0f;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Image */
+    .banner-wrap {
+      opacity: 0;
+      transform: scale(0.88) translateY(-24px);
+      animation: imgReveal 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
+      max-width: min(90vw, 820px);
+      width: 100%;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.06),
+        0 8px 40px rgba(0,0,0,0.7),
+        0 0 80px rgba(120,60,255,0.18);
+    }
+
+    .banner-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @keyframes imgReveal {
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .banner-wrap.loaded {
+      animation:
+        imgReveal 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards,
+        float 6s ease-in-out 1.4s infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50%       { transform: translateY(-8px); }
+    }
+
+    /* Text */
+    .tagline {
+      margin-top: 28px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: textReveal 1s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
+      font-size: clamp(1rem, 2.8vw, 1.5rem);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #a78bfa 0%, #f9a8d4 35%, #67e8f9 65%, #a78bfa 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline.loaded {
+      animation:
+        textReveal 1s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards,
+        shimmer 4s linear 2s infinite;
+    }
+
+    @keyframes textReveal {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes shimmer {
+      to { background-position: 200% center; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner-wrap" id="bannerWrap">
+    <img
+      src="Image/entexel-banner-opt.jpg"
+      alt="Entexel Banner"
+      width="820"
+      loading="eager"
+      decoding="async"
+    />
+  </div>
+
+  <p class="tagline" id="tagline">Where Entertainment meets Pixel</p>
+
+  <script>
+    const wrap    = document.getElementById("bannerWrap");
+    const tagline = document.getElementById("tagline");
+
+    wrap.addEventListener("animationend", (e) => {
+      if (e.animationName === "imgReveal") wrap.classList.add("loaded");
+    }, { once: true });
+
+    tagline.addEventListener("animationend", (e) => {
+      if (e.animationName === "textReveal") tagline.classList.add("loaded");
+    }, { once: true });
+  </script>
+
+</body>
+</html>

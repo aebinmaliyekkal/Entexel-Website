@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#071624">
+  <meta name="description" content="Privacy Policy for Mission Deep, a mobile game by Entexel. Learn how game progress, accounts, leaderboards, cloud saves, and rewarded ads are handled.">
+  <title>Privacy Policy | Mission Deep — Entexel</title>
+  <style>
+    :root { --bg:#06131f; --surface:#0b2030; --surface2:#0e293b; --line:#244052; --text:#ebf5f8; --muted:#afc5d2; --accent:#70d9df; --accent2:#a2f0e6; --max:1160px; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:2rem; }
+    body { margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); font-size:16px; line-height:1.75; }
+    body::before { content:""; position:absolute; inset:0 0 auto; height:490px; pointer-events:none; background: radial-gradient(ellipse at 82% 0, rgba(31,142,157,.26), transparent 56%), radial-gradient(ellipse at 10% 24%, rgba(14,89,132,.22), transparent 54%); }
+    a { color:var(--accent); text-underline-offset:3px; overflow-wrap:anywhere; }
+    a:hover { color:var(--accent2); }
+    a:focus-visible { outline:3px solid var(--accent2); outline-offset:4px; border-radius:3px; }
+    .skip { position:absolute; left:12px; top:-80px; background:#fff; color:#000; z-index:100; padding:10px 14px; }
+    .skip:focus { top:12px; }
+    .container { max-width:var(--max); padding:0 28px; margin:auto; }
+    .topbar { position:relative; z-index:2; border-bottom:1px solid rgba(168,211,227,.14); }
+    .topbar-inner { display:flex; align-items:center; justify-content:space-between; min-height:82px; gap:18px; }
+    .brand { display:flex; gap:12px; align-items:center; font-weight:800; letter-spacing:.1em; font-size:1rem; color:#fff; text-decoration:none; }
+    .mark { width:42px; height:42px; border:1px solid #4e9fab; border-radius:13px; display:grid; place-items:center; background:linear-gradient(155deg,#133e51,#0a2031); box-shadow:inset 0 1px rgba(255,255,255,.1); }
+    .mark svg { width:27px; height:27px; }
+    .studio { color:var(--muted); font-size:.85rem; letter-spacing:.06em; }
+    .hero { position:relative; padding:65px 0 61px; overflow:hidden; }
+    .eyebrow { display:inline-flex; align-items:center; gap:9px; color:var(--accent2); font-size:.74rem; font-weight:750; text-transform:uppercase; letter-spacing:.17em; }
+    .eyebrow::before { content:""; width:24px; height:1px; background:var(--accent); }
+    h1 { font-size:clamp(2.7rem,6vw,4.5rem); margin:14px 0 12px; line-height:1.08; letter-spacing:-.047em; }
+    .intro { max-width:690px; font-size:1.07rem; color:#c4d9e3; margin:0; }
+    .meta { margin:26px 0 0; display:flex; align-items:center; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:.9rem; }
+    .meta .dot { opacity:.45; }
+    .policy-layout { position:relative; display:grid; grid-template-columns:228px minmax(0,1fr); align-items:start; gap:44px; padding-bottom:100px; }
+    .sidebar { position:sticky; top:28px; border:1px solid var(--line); border-radius:17px; padding:20px 17px; background:rgba(11,31,46,.75); }
+    .sidebar h2 { color:#bfd9e1; margin:0 0 13px; font-size:.71rem; line-height:1.4; text-transform:uppercase; letter-spacing:.12em; }
+    .sidebar ol { margin:0; padding:0; list-style:none; }
+    .sidebar li a { color:#b8cdd9; display:block; text-decoration:none; font-size:.86rem; padding:7px 8px; border-radius:7px; line-height:1.4; }
+    .sidebar li a:hover, .sidebar li a:focus-visible { background:#173a4a; color:#e4fbff; }
+    .content { min-width:0; }
+    .overview { padding:24px 27px; background:rgba(14,46,60,.68); border:1px solid #356575; border-radius:16px; margin:0 0 36px; }
+    .overview p { margin:0; }
+    .overview strong { color:#f2ffff; }
+    section.policy-section { padding:10px 0 24px; margin-bottom:16px; border-bottom:1px solid var(--line); }
+    section.policy-section:last-of-type { border-bottom:0; }
+    h2.section-heading { font-size:1.43rem; line-height:1.35; letter-spacing:-.02em; margin:0 0 12px; color:#f2faff; }
+    h3 { font-size:1.07rem; margin:22px 0 4px; color:#e9f8fc; }
+    p { margin:0 0 15px; }
+    ul { padding-left:23px; margin:8px 0 18px; }
+    li { padding-left:3px; margin:7px 0; }
+    strong { color:#f1f8fb; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:11px; margin:18px 0; }
+    .data-card { border:1px solid var(--line); background:#0b2535; padding:16px 18px; border-radius:12px; }
+    .data-card b { display:block; margin-bottom:4px; color:#a8eff0; font-size:.93rem; }
+    .data-card span { display:block; color:#c5d6dd; font-size:.9rem; line-height:1.6; }
+    .fine { font-size:.92rem; color:var(--muted); }
+    .contact-box { border:1px solid #427786; border-radius:14px; padding:22px 24px; background:linear-gradient(135deg,rgba(16,65,80,.68),rgba(9,35,53,.7)); }
+    .contact-box p:last-child { margin-bottom:0; }
+    .email { display:inline-block; font-weight:700; font-size:1.07rem; }
+    .btn { display:inline-block; padding:11px 18px; background:var(--accent); border:1px solid transparent; color:#06222a; font-weight:800; text-decoration:none; border-radius:9px; margin-top:6px; line-height:1.35; }
+    .btn:hover { background:#a4f2e9; color:#06222a; }
+    footer { border-top:1px solid var(--line); color:#a9c2ce; padding:27px 0 42px; }
+    .footer-row { display:flex; gap:16px; flex-wrap:wrap; justify-content:space-between; align-items:center; font-size:.88rem; }
+    @media(max-width:800px) { .policy-layout { grid-template-columns:minmax(0,1fr); gap:23px; } .sidebar { position:static; } .sidebar ol { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 8px; } .hero { padding:48px 0 42px; } }
+    @media(max-width:510px) { .container { padding:0 19px; } .topbar-inner { min-height:72px; } .studio { font-size:.75rem; } .hero { padding:42px 0 40px; } .intro { font-size:.99rem; } .grid { grid-template-columns:1fr; } .sidebar ol { grid-template-columns:1fr; } .overview { padding:20px; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print { :root { --bg:#fff; --text:#111; --muted:#444; --line:#ddd; --accent:#00616b; } body { background:#fff; color:#111; } body::before,.sidebar,.mark { display:none; } .hero { padding:25px 0; } .policy-layout { display:block; } .overview,.data-card,.contact-box { background:#fff; border-color:#aaa; } h1,h2.section-heading,h3,strong,.data-card b,.contact-box strong { color:#111; } p,li,.intro,.fine,.meta,.data-card span { color:#222; } .topbar,.footer { border-color:#ddd; } a { color:#005b71; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to privacy policy</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="Mission Deep — back to top">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 10.5C8 7 12 7 16 10.5C20 14 24 14 29 10.5" stroke="#94EBE6" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M3 17C8 13.5 12 13.5 16 17C20 20.5 24 20.5 29 17" stroke="#94EBE6" stroke-width="2.4" stroke-linecap="round" opacity=".75"/>
+            <path d="M3 23.5C8 20 12 20 16 23.5C20 27 24 27 29 23.5" stroke="#94EBE6" stroke-width="2.4" stroke-linecap="round" opacity=".48"/>
+          </svg>
+        </span>
+        MISSION DEEP
+      </a>
+      <span class="studio">A GAME BY ENTEXEL</span>
+    </div>
+  </header>
+
+  <div id="top" class="hero">
+    <div class="container">
+      <span class="eyebrow">Player privacy</span>
+      <h1>Privacy Policy</h1>
+      <p class="intro">How Entexel handles information when you play Mission Deep on Android or iOS, use online features, and choose to watch rewarded advertisements.</p>
+      <p class="meta"><span>Effective date: November 13, 2026</span><span class="dot" aria-hidden="true">•</span><span>Developer: Entexel</span></p>
+    </div>
+  </div>
+
+  <main id="main" class="container policy-layout">
+    <nav class="sidebar" aria-label="Privacy policy sections">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#about">1. About this policy</a></li>
+        <li><a href="#data">2. Information collected</a></li>
+        <li><a href="#use">3. How information is used</a></li>
+        <li><a href="#services">4. Third-party services</a></li>
+        <li><a href="#ads">5. Rewarded ads</a></li>
+        <li><a href="#storage">6. Storage and retention</a></li>
+        <li><a href="#sharing">7. Sharing and visibility</a></li>
+        <li><a href="#rights">8. Your choices and rights</a></li>
+        <li><a href="#account-deletion">9. Account deletion</a></li>
+        <li><a href="#children">10. Age suitability</a></li>
+        <li><a href="#security">11. Data security</a></li>
+        <li><a href="#changes">12. Policy changes</a></li>
+        <li><a href="#contact">13. Contact</a></li>
+      </ol>
+    </nav>
+
+    <article class="content">
+      <div class="overview">
+        <p><strong>Privacy at a glance.</strong> Mission Deep saves gameplay progress on your device and can synchronize progress online when you sign in. Unity Gaming Services supports player accounts, names, cloud saves, and leaderboards. Optional rewarded ads are provided through Google AdMob, which can process device and advertising-related information. The game is intended for ages 13 and above.</p>
+      </div>
+
+      <section id="about" class="policy-section" aria-labelledby="about-title">
+        <h2 id="about-title" class="section-heading">1. About this policy</h2>
+        <p>Mission Deep (the “Game”) is a mobile video game developed and published by <strong>Entexel</strong> (“Entexel,” “we,” “us,” or “our”). This Privacy Policy explains how information is collected, used, stored, and shared when you play the Game on Android or iOS, use its optional online features, or view rewarded advertisements.</p>
+        <p>This policy applies to Mission Deep and the services integrated into it. Third-party providers also process certain information under their own privacy notices, which are linked below.</p>
+      </section>
+
+      <section id="data" class="policy-section" aria-labelledby="data-title">
+        <h2 id="data-title" class="section-heading">2. Information we collect and process</h2>
+        <p>The information processed depends on how you use the Game and whether you sign in or choose to watch an advertisement.</p>
+        <div class="grid">
+          <div class="data-card"><b>Local game data</b><span>Progress, game settings, in-game coin balance, unlocked items, and other gameplay state saved on your device.</span></div>
+          <div class="data-card"><b>Player and account data</b><span>Player name, a unique player or authentication identifier, and sign-in/session information needed for Unity-powered account features.</span></div>
+          <div class="data-card"><b>Online gameplay data</b><span>Cloud-saved progress, leaderboard scores, ranking information, and related gameplay records when online features are used.</span></div>
+          <div class="data-card"><b>Advertising and technical data</b><span>IP address, approximate location inferred from IP, device or advertising identifiers where permitted, ad interactions, and relevant performance or diagnostic information processed by advertising or cloud-service providers.</span></div>
+        </div>
+        <p>Some information is supplied by you (for example, your player name); other information is generated during gameplay or collected automatically by the software services integrated into the Game. Depending on the sign-in method, a third-party identity provider may also process identifiers necessary for authentication under its own policy.</p>
+        <p>The Game does <strong>not request direct access to your camera, microphone, contacts, or precise GPS location</strong> as part of its described features. This does not prevent integrated services from processing technical information such as an IP address or device identifiers.</p>
+      </section>
+
+      <section id="use" class="policy-section" aria-labelledby="use-title">
+        <h2 id="use-title" class="section-heading">3. How information is used</h2>
+        <p>We process the information described above to:</p>
+        <ul>
+          <li>Save your progress, preferences, virtual coins, and unlocked in-game items.</li>
+          <li>Authenticate players and maintain access to signed-in accounts.</li>
+          <li>Synchronize saved progress across devices when cloud saving is enabled through sign-in.</li>
+          <li>Record and display player names, scores, and rankings on leaderboards.</li>
+          <li>Show optional rewarded advertisements and deliver the corresponding in-game reward after a qualifying ad view.</li>
+          <li>Support advertising measurement, fraud prevention, service security, and technical operation through integrated providers.</li>
+          <li>Respond to support, privacy, access, or deletion requests.</li>
+        </ul>
+        <p>Where privacy laws require a legal basis, this processing may rely on providing requested game features, legitimate interests in operating and securing the Game, compliance with legal obligations, or your consent for certain advertising activities.</p>
+      </section>
+
+      <section id="services" class="policy-section" aria-labelledby="services-title">
+        <h2 id="services-title" class="section-heading">4. Third-party services</h2>
+        <h3>Unity Gaming Services</h3>
+        <p>We use <strong>Unity Gaming Services</strong> for player authentication and account functionality, player names, leaderboards, and online cloud saving. Unity may process unique player identifiers, IP addresses, session information, and gameplay records necessary to provide these services. Information stored through Unity services may be processed or hosted outside your country of residence.</p>
+        <p><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">Unity Game Player and App User Privacy Policy</a></p>
+        <h3>Google AdMob</h3>
+        <p>We use <strong>Google AdMob</strong> to display rewarded ads. Google and its advertising partners may process device identifiers, IP addresses, advertising and app-interaction data, and diagnostic or performance information in connection with serving, measuring, personalizing where allowed, and protecting ads.</p>
+        <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> · <a href="https://support.google.com/admob/answer/7676680" target="_blank" rel="noopener noreferrer">About personalized and non-personalized ads</a></p>
+        <h3>Godot game engine</h3>
+        <p>Mission Deep is developed using the <strong>Godot</strong> game engine. The engine itself is not identified here as a separate account or advertising provider; data handling for the Game depends on its specific features and integrated services as described in this policy.</p>
+      </section>
+
+      <section id="ads" class="policy-section" aria-labelledby="ads-title">
+        <h2 id="ads-title" class="section-heading">5. Rewarded advertising and in-game currency</h2>
+        <p>Mission Deep offers <strong>optional rewarded video ads</strong> through Google AdMob. Players may choose to watch these ads to receive in-game rewards. Depending on your location, consent choices, and device settings, ads may be personalized or non-personalized.</p>
+        <p>Personalized ads can use information about interests or prior activity, while non-personalized ads use more contextual signals. <strong>Even non-personalized ads can involve processing technical identifiers and other information</strong> for functions such as frequency capping, aggregated reporting, or fraud prevention. Where consent is required for advertising, appropriate choices must be respected.</p>
+        <p>The in-game shop uses <strong>virtual coins</strong> to acquire game items. Coin balances and item unlocks are part of game progress; they are stored locally and may be synchronized to your cloud save if you are signed in. Purchases made solely with in-game coins do not require you to provide Entexel with payment-card details.</p>
+      </section>
+
+      <section id="storage" class="policy-section" aria-labelledby="storage-title">
+        <h2 id="storage-title" class="section-heading">6. Storage and data retention</h2>
+        <p><strong>On your device:</strong> Game progress and settings are stored locally. They ordinarily remain until overwritten, reset, cleared using device controls, or removed with the Game or its stored data. Uninstalling the Game may remove local data but does not necessarily remove any separately stored online account data.</p>
+        <p><strong>In the cloud:</strong> When you sign in, associated account identifiers, cloud-saved gameplay information, and leaderboard records are maintained through Unity Gaming Services for as long as needed to support those features, unless deleted or reset. Leaderboard data may remain until the relevant records are deleted or a leaderboard is reset; service-provider retention and backup processes may differ.</p>
+        <p><strong>After a deletion request:</strong> We will process verified requests to delete account-associated information that we control, including relevant cloud saves and leaderboard records, subject to limited retention when required by law or necessary for legitimate security and fraud-prevention purposes. Some provider logs and backups may follow their own retention schedules. You can contact us for information about a specific request.</p>
+        <p>Advertising data handled by Google may be retained under Google's policies, controls, and applicable laws; Entexel does not set every retention period used by AdMob.</p>
+      </section>
+
+      <section id="sharing" class="policy-section" aria-labelledby="sharing-title">
+        <h2 id="sharing-title" class="section-heading">7. Sharing of information and public leaderboards</h2>
+        <p>We share or make available information only as needed for the functionality described in this policy, including with:</p>
+        <ul>
+          <li><strong>Unity Gaming Services</strong>, to operate accounts, cloud saving, and leaderboards.</li>
+          <li><strong>Google AdMob and its advertising partners</strong>, to deliver and measure ads, support personalization where permitted, and prevent ad fraud.</li>
+          <li><strong>Other players</strong>, when your chosen player name and leaderboard score or rank are shown publicly within the Game.</li>
+          <li><strong>Authorities or relevant parties</strong>, if disclosure is legally required or necessary to protect rights, safety, or the Game's security.</li>
+        </ul>
+        <p>We do not make your cloud-save contents publicly visible merely because you are signed in. Please avoid putting personal contact information into a public player name.</p>
+      </section>
+
+      <section id="rights" class="policy-section" aria-labelledby="rights-title">
+        <h2 id="rights-title" class="section-heading">8. Your privacy choices and rights</h2>
+        <p>Depending on applicable law, you may have rights to access, correct, delete, or obtain a copy of personal information associated with your account, object to or restrict certain processing, or withdraw consent where processing is consent-based. To exercise these rights, contact <a href="mailto:info.entexel@gmail.com?subject=Mission%20Deep%20Privacy%20Request">info.entexel@gmail.com</a>.</p>
+        <p>You can also manage some advertising-related choices using privacy or advertising settings provided by Android, iOS, or Google. On supported devices, you may reset or restrict use of advertising identifiers. Such settings do not necessarily stop all ads or all technical data processing required to deliver them.</p>
+        <p>For in-game data that exists only on your device, you can typically remove it by clearing the Game's stored data or uninstalling it. This will not automatically delete online data associated with an account; see the next section.</p>
+      </section>
+
+      <section id="account-deletion" class="policy-section" aria-labelledby="deletion-title">
+        <h2 id="deletion-title" class="section-heading">9. Request account and data deletion</h2>
+        <p>If you have a Mission Deep account, you can request deletion of the account and associated cloud-stored data by contacting Entexel at the email address below.</p>
+        <div class="contact-box">
+          <p><strong>To request deletion:</strong> Email <a class="email" href="mailto:info.entexel@gmail.com?subject=Mission%20Deep%20Account%20Deletion%20Request">info.entexel@gmail.com</a> with the subject <strong>“Mission Deep Account Deletion Request”</strong>. Include your player name and, if available, your player ID so we can identify the correct account. <strong>Do not send passwords.</strong> We may ask you to verify ownership before acting on the request.</p>
+          <a class="btn" href="mailto:info.entexel@gmail.com?subject=Mission%20Deep%20Account%20Deletion%20Request&amp;body=Hello%20Entexel%2C%0A%0AI%20would%20like%20to%20request%20deletion%20of%20my%20Mission%20Deep%20account%20and%20associated%20cloud%20data.%0A%0APlayer%20name%3A%20%0APlayer%20ID%20(if%20known)%3A%20%0A%0AThank%20you.">Compose deletion request</a>
+        </div>
+        <h3>What is deleted?</h3>
+        <p>Following appropriate verification, the requested deletion covers the Mission Deep account records under our control and associated Unity-hosted game data, such as cloud saves, gameplay records, player name, and leaderboard records, subject to applicable legal retention exceptions. Data held independently by an advertising provider is governed by that provider's privacy choices and deletion procedures.</p>
+        <h3>What may remain?</h3>
+        <p>Local game data on your device may need to be removed separately using your device's app-data controls or by uninstalling the Game. Limited information may be retained where legally required or for legitimate security or fraud-prevention purposes, and residual provider backups may persist temporarily according to provider processes.</p>
+        <p class="fine">Deleting an account can permanently remove access to saved progress and leaderboard records associated with that account.</p>
+      </section>
+
+      <section id="children" class="policy-section" aria-labelledby="children-title">
+        <h2 id="children-title" class="section-heading">10. Children's privacy and age suitability</h2>
+        <p>Mission Deep is intended for players <strong>aged 13 and above</strong> and is not directed toward children under 13. We do not knowingly seek personal information from children under 13. If you believe a child under 13 has provided personal information through the Game, please contact us so that we can investigate and take appropriate action.</p>
+        <p>Additional consent or age-related requirements may apply in some regions, including to teenagers above the age of 13. We aim to respect those requirements when offering the Game and its advertising features.</p>
+      </section>
+
+      <section id="security" class="policy-section" aria-labelledby="security-title">
+        <h2 id="security-title" class="section-heading">11. Data security</h2>
+        <p>We take the security of player information seriously and use established third-party infrastructure for online account and cloud features. We aim to limit access to account-associated information to legitimate operational purposes. Nevertheless, no internet transmission, device, or storage system can be guaranteed to be completely secure. Please protect access to any account or external sign-in method you use.</p>
+      </section>
+
+      <section id="changes" class="policy-section" aria-labelledby="changes-title">
+        <h2 id="changes-title" class="section-heading">12. Changes to this policy</h2>
+        <p>We may update this Privacy Policy when Game features, service providers, data practices, or applicable requirements change. When we make changes, we will post the revised policy and update its effective date. Where required by law, we will provide additional notice or request consent before material new uses of personal information.</p>
+      </section>
+
+      <section id="contact" class="policy-section" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="section-heading">13. Contact us</h2>
+        <p>If you have questions about this Privacy Policy, the information processed in Mission Deep, or your privacy rights, contact:</p>
+        <div class="contact-box">
+          <p><strong>Developer:</strong> Entexel<br><strong>Game:</strong> Mission Deep<br><strong>Privacy contact:</strong> <a class="email" href="mailto:info.entexel@gmail.com?subject=Mission%20Deep%20Privacy%20Inquiry">info.entexel@gmail.com</a></p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© 2026 Entexel · Mission Deep</span>
+      <span><a href="#top">Back to top</a> · <a href="#account-deletion">Delete account</a></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#071624">
+  <meta name="description" content="Terms of Service for Mission Deep by Entexel. Rules for accounts, cloud saves, leaderboards, virtual coins, rewarded ads, and game use on Android and iOS.">
+  <title>Terms of Service | Mission Deep — Entexel</title>
+  <style>
+    :root { --bg:#06131f; --surface:#0b2030; --surface2:#0e293b; --line:#244052; --text:#ebf5f8; --muted:#afc5d2; --accent:#70d9df; --accent2:#a2f0e6; --max:1160px; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:2rem; }
+    body { margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); font-size:16px; line-height:1.75; }
+    body::before { content:""; position:absolute; inset:0 0 auto; height:490px; pointer-events:none; background: radial-gradient(ellipse at 82% 0, rgba(31,142,157,.26), transparent 56%), radial-gradient(ellipse at 10% 24%, rgba(14,89,132,.22), transparent 54%); }
+    a { color:var(--accent); text-underline-offset:3px; overflow-wrap:anywhere; }
+    a:hover { color:var(--accent2); }
+    a:focus-visible { outline:3px solid var(--accent2); outline-offset:4px; border-radius:3px; }
+    .skip { position:absolute; left:12px; top:-80px; background:#fff; color:#000; z-index:100; padding:10px 14px; }
+    .skip:focus { top:12px; }
+    .container { max-width:var(--max); padding:0 28px; margin:auto; }
+    .topbar { position:relative; z-index:2; border-bottom:1px solid rgba(168,211,227,.14); }
+    .topbar-inner { display:flex; align-items:center; justify-content:space-between; min-height:82px; gap:18px; }
+    .brand { display:flex; gap:12px; align-items:center; font-weight:800; letter-spacing:.1em; font-size:1rem; color:#fff; text-decoration:none; }
+    .mark { width:42px; height:42px; border:1px solid #4e9fab; border-radius:13px; display:grid; place-items:center; background:linear-gradient(155deg,#133e51,#0a2031); box-shadow:inset 0 1px rgba(255,255,255,.1); }
+    .mark svg { width:27px; height:27px; }
+    .studio { color:var(--muted); font-size:.85rem; letter-spacing:.06em; }
+    .hero { position:relative; padding:65px 0 61px; overflow:hidden; }
+    .eyebrow { display:inline-flex; align-items:center; gap:9px; color:var(--accent2); font-size:.74rem; font-weight:750; text-transform:uppercase; letter-spacing:.17em; }
+    .eyebrow::before { content:""; width:24px; height:1px; background:var(--accent); }
+    h1 { font-size:clamp(2.7rem,6vw,4.5rem); margin:14px 0 12px; line-height:1.08; letter-spacing:-.047em; }
+    .intro { max-width:690px; font-size:1.07rem; color:#c4d9e3; margin:0; }
+    .meta { margin:26px 0 0; display:flex; align-items:center; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:.9rem; }
+    .meta .dot { opacity:.45; }
+    .policy-layout { position:relative; display:grid; grid-template-columns:228px minmax(0,1fr); align-items:start; gap:44px; padding-bottom:100px; }
+    .sidebar { position:sticky; top:28px; border:1px solid var(--line); border-radius:17px; padding:20px 17px; background:rgba(11,31,46,.75); }
+    .sidebar h2 { color:#bfd9e1; margin:0 0 13px; font-size:.71rem; line-height:1.4; text-transform:uppercase; letter-spacing:.12em; }
+    .sidebar ol { margin:0; padding:0; list-style:none; }
+    .sidebar li a { color:#b8cdd9; display:block; text-decoration:none; font-size:.86rem; padding:7px 8px; border-radius:7px; line-height:1.4; }
+    .sidebar li a:hover, .sidebar li a:focus-visible { background:#173a4a; color:#e4fbff; }
+    .content { min-width:0; }
+    .overview { padding:24px 27px; background:rgba(14,46,60,.68); border:1px solid #356575; border-radius:16px; margin:0 0 36px; }
+    .overview p { margin:0; }
+    .overview strong { color:#f2ffff; }
+    section.policy-section { padding:10px 0 24px; margin-bottom:16px; border-bottom:1px solid var(--line); }
+    section.policy-section:last-of-type { border-bottom:0; }
+    h2.section-heading { font-size:1.43rem; line-height:1.35; letter-spacing:-.02em; margin:0 0 12px; color:#f2faff; }
+    h3 { font-size:1.07rem; margin:22px 0 4px; color:#e9f8fc; }
+    p { margin:0 0 15px; }
+    ul { padding-left:23px; margin:8px 0 18px; }
+    li { padding-left:3px; margin:7px 0; }
+    strong { color:#f1f8fb; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:11px; margin:18px 0; }
+    .data-card { border:1px solid var(--line); background:#0b2535; padding:16px 18px; border-radius:12px; }
+    .data-card b { display:block; margin-bottom:4px; color:#a8eff0; font-size:.93rem; }
+    .data-card span { display:block; color:#c5d6dd; font-size:.9rem; line-height:1.6; }
+    .fine { font-size:.92rem; color:var(--muted); }
+    .contact-box { border:1px solid #427786; border-radius:14px; padding:22px 24px; background:linear-gradient(135deg,rgba(16,65,80,.68),rgba(9,35,53,.7)); }
+    .contact-box p:last-child { margin-bottom:0; }
+    .email { display:inline-block; font-weight:700; font-size:1.07rem; }
+    .btn { display:inline-block; padding:11px 18px; background:var(--accent); border:1px solid transparent; color:#06222a; font-weight:800; text-decoration:none; border-radius:9px; margin-top:6px; line-height:1.35; }
+    .btn:hover { background:#a4f2e9; color:#06222a; }
+    footer { border-top:1px solid var(--line); color:#a9c2ce; padding:27px 0 42px; }
+    .footer-row { display:flex; gap:16px; flex-wrap:wrap; justify-content:space-between; align-items:center; font-size:.88rem; }
+    @media(max-width:800px) { .policy-layout { grid-template-columns:minmax(0,1fr); gap:23px; } .sidebar { position:static; } .sidebar ol { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 8px; } .hero { padding:48px 0 42px; } }
+    @media(max-width:510px) { .container { padding:0 19px; } .topbar-inner { min-height:72px; } .studio { font-size:.75rem; } .hero { padding:42px 0 40px; } .intro { font-size:.99rem; } .grid { grid-template-columns:1fr; } .sidebar ol { grid-template-columns:1fr; } .overview { padding:20px; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print { :root { --bg:#fff; --text:#111; --muted:#444; --line:#ddd; --accent:#00616b; } body { background:#fff; color:#111; } body::before,.sidebar,.mark { display:none; } .hero { padding:25px 0; } .policy-layout { display:block; } .overview,.data-card,.contact-box { background:#fff; border-color:#aaa; } h1,h2.section-heading,h3,strong,.data-card b,.contact-box strong { color:#111; } p,li,.intro,.fine,.meta,.data-card span { color:#222; } .topbar,.footer { border-color:#ddd; } a { color:#005b71; } }
+    .notice { background:rgba(15,48,64,.68); border:1px solid #396676; border-left:4px solid var(--accent); padding:17px 20px; border-radius:10px; margin:18px 0 22px; color:#d9edf3; }
+    .notice p:last-child { margin-bottom:0; }
+    .term-label { text-transform:uppercase; letter-spacing:.1em; color:#a5e8e6; font-size:.75rem; font-weight:800; }
+    @media print { .notice { color:#111; background:#fff; border-color:#777; } .term-label { color:#111; } }
+
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to terms of service</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="Mission Deep — back to top">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 10.5C8 7 12 7 16 10.5C20 14 24 14 29 10.5" stroke="#94EBE6" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M3 17C8 13.5 12 13.5 16 17C20 20.5 24 20.5 29 17" stroke="#94EBE6" stroke-width="2.4" stroke-linecap="round" opacity=".75"/>
+            <path d="M3 23.5C8 20 12 20 16 23.5C20 27 24 27 29 23.5" stroke="#94EBE6" stroke-width="2.4" stroke-linecap="round" opacity=".48"/>
+          </svg>
+        </span>
+        MISSION DEEP
+      </a>
+      <span class="studio">A GAME BY ENTEXEL</span>
+    </div>
+  </header>
+
+  <div id="top" class="hero">
+    <div class="container">
+      <span class="eyebrow">Player agreement</span>
+      <h1>Terms of Service</h1>
+      <p class="intro">The rules for playing Mission Deep, using your player account, saving progress, joining leaderboards, earning rewards, and spending in-game coins.</p>
+      <p class="meta"><span>Effective date: November 13, 2026</span><span class="dot" aria-hidden="true">•</span><span>Developer: Entexel</span></p>
+    </div>
+  </div>
+
+  <main id="main" class="container policy-layout">
+    <nav class="sidebar" aria-label="Terms of Service sections">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#agreement">1. Agreement and scope</a></li>
+        <li><a href="#eligibility">2. Age and eligibility</a></li>
+        <li><a href="#license">3. Game license and ownership</a></li>
+        <li><a href="#accounts">4. Player accounts</a></li>
+        <li><a href="#cloud">5. Local and cloud saves</a></li>
+        <li><a href="#leaderboards">6. Player names and leaderboards</a></li>
+        <li><a href="#coins">7. Virtual coins and in-game shop</a></li>
+        <li><a href="#rewarded-ads">8. Optional rewarded advertising</a></li>
+        <li><a href="#conduct">9. Fair play and acceptable use</a></li>
+        <li><a href="#third-parties">10. Third-party services and stores</a></li>
+        <li><a href="#privacy">11. Privacy and personal information</a></li>
+        <li><a href="#availability">12. Updates and service availability</a></li>
+        <li><a href="#suspension">13. Suspension and account deletion</a></li>
+        <li><a href="#warranties">14. Disclaimers and liability</a></li>
+        <li><a href="#law">15. Applicable law and disputes</a></li>
+        <li><a href="#changes">16. Changes to these Terms</a></li>
+        <li><a href="#contact">17. Contact Entexel</a></li>
+      </ol>
+    </nav>
+
+    <article class="content">
+      <div class="overview">
+        <p><strong>Terms at a glance.</strong> Mission Deep is for ages 13+. You may save progress locally and sign in for supported Unity-powered online features. Leaderboard names and scores can be public. Virtual coins are for use inside the Game only. AdMob rewarded ads are optional. Please play fairly, protect your account, and review our <a href="mission-deep-privacy-policy.html">Privacy Policy</a>.</p>
+      </div>
+
+      <section id="agreement" class="policy-section" aria-labelledby="agreement-title">
+        <h2 id="agreement-title" class="section-heading">1. Agreement and scope</h2>
+        <p>These Terms of Service (the “Terms”) are an agreement between you and <strong>Entexel</strong> (“Entexel,” “we,” “us,” or “our”) concerning your access to and use of <strong>Mission Deep</strong> (the “Game”), including its Android and iOS versions and the related online game services that we make available.</p>
+        <p>By downloading, accessing, or playing the Game, you agree to these Terms, to the extent that doing so constitutes valid acceptance under applicable law. If you do not agree, please do not use the Game. If you are legally a minor, a parent or guardian may need to review and agree to these Terms on your behalf.</p>
+        <p>These Terms supplement, and do not replace, any mandatory rights you have under applicable consumer laws. Separate terms from the app store or an integrated service may also apply to your use of those services.</p>
+      </section>
+
+      <section id="eligibility" class="policy-section" aria-labelledby="eligibility-title">
+        <h2 id="eligibility-title" class="section-heading">2. Age and eligibility</h2>
+        <p>Mission Deep is intended for players <strong>aged 13 or older</strong> and is not intended for children younger than 13. If you are younger than the age at which you may enter agreements or consent to relevant online services in your region, you should use the Game only with the consent or involvement of a parent or legal guardian where required.</p>
+        <p>Some regions or third-party services may apply additional age or consent requirements. You must comply with applicable laws and store rules when using the Game.</p>
+      </section>
+
+      <section id="license" class="policy-section" aria-labelledby="license-title">
+        <h2 id="license-title" class="section-heading">3. Game license and intellectual property</h2>
+        <p>Subject to these Terms and applicable store license rules, Entexel gives you a limited, personal, non-exclusive, non-transferable, revocable license to install and play the Game for your own non-commercial entertainment on devices you own or control, as permitted by law and the relevant app store.</p>
+        <p>The Game, its code, gameplay systems, design, artwork, names, logos, audiovisual content, and other materials are owned by Entexel or its licensors, except where third-party licenses state otherwise. You do not obtain ownership of the Game or its assets by installing it, creating an account, or unlocking items.</p>
+        <p>You must not copy, redistribute, sell, rent, sublicense, or commercially exploit the Game or its assets without permission, or reverse engineer, circumvent technical protections, or modify the Game except to the extent expressly allowed by applicable law or applicable open-source licenses.</p>
+      </section>
+
+      <section id="accounts" class="policy-section" aria-labelledby="accounts-title">
+        <h2 id="accounts-title" class="section-heading">4. Player accounts and sign-in</h2>
+        <p>Mission Deep uses <strong>Unity Gaming Services</strong> to support player accounts and sign-in. Some features—such as online leaderboards and cloud-saved progress—may require you to sign in. Features available without signing in may differ from features available to signed-in players.</p>
+        <ul>
+          <li>Provide accurate information when requested, and do not impersonate another person.</li>
+          <li>Keep your account credentials and any linked sign-in methods secure. Do not share access to your account.</li>
+          <li>You are responsible for activity through your account to the extent allowed by law, except where the activity results from circumstances for which you are not responsible.</li>
+          <li>Contact us if you believe your account has been accessed without your permission.</li>
+        </ul>
+        <p>Accounts are for individual use unless we expressly provide another arrangement. Account recovery and access may depend on the particular sign-in method supported by Unity Gaming Services or another identity provider.</p>
+      </section>
+
+      <section id="cloud" class="policy-section" aria-labelledby="cloud-title">
+        <h2 id="cloud-title" class="section-heading">5. Local progress and cloud saves</h2>
+        <p>The Game stores progress and game-related information <strong>locally on your device</strong>. When you sign in, supported progress may also be stored or synchronized through <strong>Unity Cloud Save</strong> or other applicable Unity Gaming Services features.</p>
+        <p>Clearing app data, uninstalling the Game, switching devices, losing access to a sign-in method, or experiencing an interrupted synchronization may cause some progress or settings to become unavailable. Cloud-saving functionality depends on an internet connection and the availability of the relevant services. We cannot guarantee that every local record will always be recoverable or that all devices will stay perfectly synchronized.</p>
+        <p>Please avoid clearing local data until you have confirmed that any desired online save has synchronized, where that feature is available. If you believe progress was lost because of a technical error, contact us using the details below.</p>
+      </section>
+
+      <section id="leaderboards" class="policy-section" aria-labelledby="leaderboards-title">
+        <h2 id="leaderboards-title" class="section-heading">6. Player names, scores, and leaderboards</h2>
+        <p>If you use online leaderboard features, <strong>your chosen player name, score, and ranking</strong> may be visible to other players. Do not use a player name that includes private personal information or that is threatening, hateful, sexually explicit, misleading, impersonating, or otherwise unlawful.</p>
+        <p>We may correct, remove, or exclude names and leaderboard entries where reasonably necessary to address cheating, manipulation, technical errors, abuse, or violations of these Terms. If you believe an entry or moderation action is incorrect, you may contact us for review.</p>
+      </section>
+
+      <section id="coins" class="policy-section" aria-labelledby="coins-title">
+        <h2 id="coins-title" class="section-heading">7. Virtual coins and the in-game shop</h2>
+        <p>Mission Deep includes an in-game shop in which certain game items can be unlocked using <strong>virtual coins</strong>. As currently offered, the shop described here uses in-game coins, <strong>not payments of real-world money</strong>. Virtual coins may be earned or awarded through gameplay and other activities as indicated within the Game.</p>
+        <ul>
+          <li>Virtual coins and unlocked in-game items are <strong>digital gameplay features, not money or property</strong> and cannot be withdrawn, sold, traded outside the Game, or redeemed for cash or real-world goods.</li>
+          <li>Coins and items are intended solely for use in Mission Deep. You receive permission to use them in the Game; you do not acquire a transferable ownership interest.</li>
+          <li>Coin prices, item attributes, availability, rewards, and gameplay balancing may change in future updates. We will aim to communicate significant changes fairly and will respect rights required by applicable law.</li>
+          <li>We may correct coin balances or item entitlements that result from a clear technical error, unauthorized modification, or fraudulent activity, while providing a way to raise concerns with us.</li>
+        </ul>
+        <p>There are currently no real-money purchases described under these Terms. If paid digital purchases are introduced in the future, we will update the relevant terms and provide required pricing and payment disclosures before those purchases are offered.</p>
+      </section>
+
+      <section id="rewarded-ads" class="policy-section" aria-labelledby="ads-title">
+        <h2 id="ads-title" class="section-heading">8. Optional rewarded advertisements</h2>
+        <p>Mission Deep offers <strong>optional rewarded advertisements</strong> supplied by <strong>Google AdMob</strong>. When a reward opportunity is presented, you can choose whether to view the advertisement. The Game will explain the reward or qualifying action in the relevant game interface.</p>
+        <p>A reward may depend on completing the required advertisement view and receiving successful completion confirmation. If an ad is unavailable, closed early, interrupted, or does not register as complete, the stated reward may not be granted. If you experience a repeated problem with a qualifying reward, please contact us.</p>
+        <p>Depending on your region, applicable consent choices, and your device settings, advertisements may be personalized or non-personalized. Advertising practices and privacy choices are explained in our <a href="mission-deep-privacy-policy.html">Privacy Policy</a>. Advertising content is supplied by third parties and may link to external products or services that Entexel does not control.</p>
+      </section>
+
+      <section id="conduct" class="policy-section" aria-labelledby="conduct-title">
+        <h2 id="conduct-title" class="section-heading">9. Fair play and acceptable use</h2>
+        <p>To keep Mission Deep fair and safe for players, you agree not to:</p>
+        <ul>
+          <li>Use cheats, bots, automated scripts, exploits, unauthorized modified clients, or other methods to manipulate scores, rewards, coins, rankings, or online services.</li>
+          <li>Interfere with game servers, accounts, APIs, network communications, security measures, or other players' access.</li>
+          <li>Attempt to access another player's account or private data without authorization.</li>
+          <li>Impersonate Entexel, staff, another player, or a service provider, or submit abusive or unlawful player names.</li>
+          <li>Use the Game for fraud, unlawful activity, or infringement of another person's rights.</li>
+        </ul>
+        <p>We may take proportionate steps to investigate and address violations, including removal of invalid leaderboard scores, correction of improperly obtained coins, restriction of online features, or account suspension, subject to applicable law.</p>
+      </section>
+
+      <section id="third-parties" class="policy-section" aria-labelledby="services-title">
+        <h2 id="services-title" class="section-heading">10. Third-party platforms and services</h2>
+        <p>Mission Deep is made with the <strong>Godot</strong> engine, uses <strong>Unity Gaming Services</strong> for account, leaderboard, and cloud features, and uses <strong>Google AdMob</strong> to serve rewarded advertisements. These services may have their own terms, usage requirements, privacy notices, and availability limitations.</p>
+        <p>Official references include the <a href="https://unity.com/legal" target="_blank" rel="noopener noreferrer">Unity legal terms</a>, <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google Terms of Service</a>, and the relevant terms of the <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener noreferrer">Google Play Store</a> or <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener noreferrer">Apple App Store</a>.</p>
+        <p><strong>For iOS downloads:</strong> unless Entexel separately provides a custom license agreement through Apple, Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Standard Licensed Application End User License Agreement (EULA)</a> governs the App Store application license. These Terms address your use of Mission Deep and its related services to the extent consistent with that agreement and applicable law. Apple is not a party to these Terms and is not a sponsor of Mission Deep.</p>
+      </section>
+
+      <section id="privacy" class="policy-section" aria-labelledby="privacy-title">
+        <h2 id="privacy-title" class="section-heading">11. Privacy and personal information</h2>
+        <p>Our <a href="mission-deep-privacy-policy.html">Mission Deep Privacy Policy</a> explains how player information is handled, including local and cloud-saved game data, account identifiers, visible leaderboard information, and technical or advertising data processed by third-party services.</p>
+        <p>These Terms do not replace your privacy rights under applicable law. For information about privacy choices, access requests, and deletion of account-associated cloud data, please review the Privacy Policy or contact us at <a href="mailto:info.entexel@gmail.com?subject=Mission%20Deep%20Privacy%20Request">info.entexel@gmail.com</a>.</p>
+      </section>
+
+      <section id="availability" class="policy-section" aria-labelledby="availability-title">
+        <h2 id="availability-title" class="section-heading">12. Updates, maintenance, and availability</h2>
+        <p>We may release patches, security updates, balancing adjustments, new content, or changes to the Game. Some updates may be required to continue using online features or to maintain security and compatibility.</p>
+        <p>Online features can be unavailable due to maintenance, network problems, device compatibility, outages, or changes by third-party providers. We may modify or discontinue features when reasonably necessary, including for safety, technical, legal, or operational reasons. Where legally required, we will provide appropriate notice or other remedies.</p>
+        <p>We will make reasonable efforts to support the Game but cannot promise uninterrupted or error-free access to every online service.</p>
+      </section>
+
+      <section id="suspension" class="policy-section" aria-labelledby="suspension-title">
+        <h2 id="suspension-title" class="section-heading">13. Account restrictions, ending use, and deletion</h2>
+        <p>You may stop using Mission Deep at any time. You may uninstall the Game, and you can request deletion of your Mission Deep account and associated online data using the procedure described in the <a href="mission-deep-privacy-policy.html#account-deletion">Privacy Policy's account deletion section</a>.</p>
+        <p>If we reasonably believe an account or its activity violates these Terms or creates a security or legal risk, we may suspend access to relevant online features, correct manipulated leaderboard entries, or terminate the affected account. Where appropriate and required by law, we will provide notice and an opportunity to challenge the decision.</p>
+        <p>Account deletion may permanently remove access to linked cloud saves, leaderboard records, and related progress. Local progress on a device may need to be removed separately; uninstalling the Game does not itself guarantee deletion of online account data.</p>
+      </section>
+
+      <section id="warranties" class="policy-section" aria-labelledby="warranties-title">
+        <h2 id="warranties-title" class="section-heading">14. Disclaimers and limitations of liability</h2>
+        <p>We aim to provide a reliable, enjoyable Game, but software and online services may contain errors or occasionally become unavailable. <strong>To the maximum extent permitted by applicable law</strong>, Mission Deep and its associated services are provided on an “as available” basis without guarantees that they will be uninterrupted, error-free, or compatible with every device.</p>
+        <p>To the extent permitted by law, Entexel is not responsible for indirect or consequential losses arising solely from the use or unavailability of the Game, including lost gameplay progress caused by device failure or third-party outages. This clause does not exclude liability that cannot legally be excluded, including liability for fraud, intentional misconduct, or other protected claims under applicable law.</p>
+        <p><strong>Nothing in these Terms removes or reduces mandatory consumer rights or legal remedies available to you.</strong> Any limitation applies only to the extent that the law governing your claim permits it.</p>
+      </section>
+
+      <section id="law" class="policy-section" aria-labelledby="law-title">
+        <h2 id="law-title" class="section-heading">15. Applicable law and resolving disputes</h2>
+        <p>If you have a concern or disagreement about Mission Deep, please contact us first so we can attempt to resolve it informally. Include your player name or relevant details, but do not send your password.</p>
+        <p>These Terms are subject to applicable law, including mandatory consumer-protection rules in your jurisdiction. Nothing here restricts your right to bring a claim before a court, regulator, or other dispute-resolution body where applicable law gives you that right.</p>
+      </section>
+
+      <section id="changes" class="policy-section" aria-labelledby="changes-title">
+        <h2 id="changes-title" class="section-heading">16. Changes to these Terms</h2>
+        <p>We may revise these Terms when we change the Game, introduce new features, modify online services, or respond to legal requirements. The current version will be posted on this page with an updated effective date.</p>
+        <p>Where a change materially affects your rights and applicable law requires notice or consent, we will provide it. Changes will apply prospectively as required by law. If you do not agree with revised Terms, you may stop using the Game and request account deletion.</p>
+      </section>
+
+      <section id="contact" class="policy-section" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="section-heading">17. Contact Entexel</h2>
+        <p>For questions about these Terms, account access, fair-play decisions, or support for Mission Deep, contact:</p>
+        <div class="contact-box">
+          <p><strong>Developer:</strong> Entexel<br>
+          <strong>Game:</strong> Mission Deep<br>
+          <strong>Support and legal contact:</strong> <a class="email" href="mailto:info.entexel@gmail.com?subject=Mission%20Deep%20Terms%20of%20Service%20Inquiry">info.entexel@gmail.com</a></p>
+          <a class="btn" href="mailto:info.entexel@gmail.com?subject=Mission%20Deep%20Support%20Request">Contact support</a>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© 2026 Entexel · Mission Deep</span>
+      <span><a href="#top">Back to top</a> · <a href="mission-deep-privacy-policy.html">Privacy Policy</a> · <a href="mailto:info.entexel@gmail.com?subject=Mission%20Deep%20Support">Contact</a></span>
+    </div>
+  </footer>
+</body>
+</html>
